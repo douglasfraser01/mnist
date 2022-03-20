@@ -37,13 +37,7 @@ model.compile(optimizer = tf.optimizers.Adam(),
               metrics=['accuracy'])
 
 
-training_history = model.fit(training_images, 
-          training_labels, 
-          #batch_size = 64,
-          #verbose = 0,
-          epochs = 5,
-          #validation_data = (test_images, test_labels), 
-          callbacks=[tensorboard_callback])
+
           
           
 model.summary()
