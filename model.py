@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 
 # Load the TensorBoard notebook extension.
-%load_ext tensorboard
+#%load_ext tensorboard
 
 mnist = tf.keras.datasets.fashion_mnist
 
