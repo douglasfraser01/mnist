@@ -42,6 +42,9 @@ model.compile(optimizer = tf.optimizers.Adam(),
           
 model.summary()
 
+print("Average training loss: ", np.average(training_history.history['loss']))
+print("Average training accuracy: ", np.average(training_history.history['accuracy']))
+
 # Write scores to a file
 #with open("metrics.txt", 'w') as outfile:
 #        outfile.write("Training variance explained: %2.1f%%\n" % train_score)
